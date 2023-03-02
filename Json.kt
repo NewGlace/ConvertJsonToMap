@@ -30,9 +30,9 @@ class Json {
 
          /***
           * @private
-          * parse a stringify object index-value and transform it into a map
+          * Parse a stringify index-value object and transform it into a map
           *
-          * @param stringify A stringify object index-value
+          * @param stringify A stringify index-value object
           * @return A array
           */
          private fun objectIndexValue(stringify: String): Array<Any> {
@@ -47,9 +47,9 @@ class Json {
 
          /***
           * @private
-          * parse a stringify object key-value and transform it into a map
+          * Parse a stringify key-value object and transform it into a map
           *
-          * @param stringify A stringify object key-value
+          * @param stringify A stringify key-value object
           * @return A map
           */
          private fun objectKeyValue(stringify: String): MutableMap<String, Any> {
@@ -64,10 +64,10 @@ class Json {
          }
 
          /***
-          * parse a stringify json and transform it into a map
+          * Parse a stringify json and transform it into a map
           *
-          * @param stringify The stringify json
-          * @return The Map
+          * @param stringify A stringify json
+          * @return A Map
           */
          fun parse(stringify: String): MutableMap<String, Any> {
              return objectKeyValue(stringify)
